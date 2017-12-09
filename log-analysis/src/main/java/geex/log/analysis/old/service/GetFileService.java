@@ -1,4 +1,4 @@
-package geex.log.analysis.service;
+package geex.log.analysis.old.service;
 
 import com.sshtools.j2ssh.SshClient;
 import com.sshtools.j2ssh.authentication.AuthenticationProtocolState;

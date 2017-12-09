@@ -1,3 +1,5 @@
+package site.xbt.hadoop.sample;
+
 import java.io.IOException;
 import java.util.StringTokenizer;
 
