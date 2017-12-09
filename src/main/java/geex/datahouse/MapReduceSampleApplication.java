@@ -56,8 +56,8 @@ public class MapReduceSampleApplication {
         job.setReducerClass(IntSumReducer.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
-        FileInputFormat.addInputPath(job, new Path("D:\\git\\datahouse\\input"));
-        FileOutputFormat.setOutputPath(job, new Path("D:\\git\\datahouse\\output"));
+        FileInputFormat.addInputPath(job, new Path("D:\\git\\datahouse\\hadoop\\input"));
+        FileOutputFormat.setOutputPath(job, new Path("D:\\git\\datahouse\\hadoop\\output"));
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
 }
