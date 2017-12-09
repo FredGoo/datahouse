@@ -6,7 +6,7 @@
 
         org.apache.hadoop.io.nativeio.NativeIO$Windows.access0
 
-3. 建一个org.apache.hadoop.io.nativeio的包,然后拷贝源码中的NativeIO.java文件,修改如下
+3. 建一个org.apache.hadoop.io.nativeio的包,然后拷贝源码中的NativeIO.java文件,修改其中的access方法如下
 
         public static boolean access(String path, NativeIO.Windows.AccessRight desiredAccess) throws IOException {
         //            return access0(path, desiredAccess.accessRight());
