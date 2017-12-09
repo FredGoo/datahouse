@@ -1,6 +1,6 @@
-package geex.datahouse.service;
+package geex.log.analysis.service;
 
-import geex.datahouse.config.FileConfig;
+import geex.log.analysis.config.FileConfig;
 
 import java.io.*;
 import java.util.zip.ZipEntry;

@@ -1,9 +1,9 @@
-package geex.datahouse.service;
+package geex.log.analysis.service;
 
 import com.sshtools.j2ssh.SshClient;
 import com.sshtools.j2ssh.authentication.AuthenticationProtocolState;
 import com.sshtools.j2ssh.authentication.PasswordAuthenticationClient;
-import geex.datahouse.config.FileConfig;
+import geex.log.analysis.config.FileConfig;
 
 import java.io.*;
 

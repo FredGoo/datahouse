@@ -1,4 +1,4 @@
-package geex.datahouse.config;
+package geex.log.analysis.config;
 
 public class FileConfig {
     public final static String OUTPUT = "D:\\尽调日志20171207\\";

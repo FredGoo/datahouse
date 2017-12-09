@@ -1,5 +1,3 @@
-package geex.datahouse;
-
 import java.io.IOException;
 import java.util.StringTokenizer;
 
@@ -56,8 +54,8 @@ public class MapReduceSampleApplication {
         job.setReducerClass(IntSumReducer.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
-        FileInputFormat.addInputPath(job, new Path("D:\\git\\datahouse\\hadoop\\input"));
-        FileOutputFormat.setOutputPath(job, new Path("D:\\git\\datahouse\\hadoop\\output"));
+        FileInputFormat.addInputPath(job, new Path("hadoop-sample/materials/input"));
+        FileOutputFormat.setOutputPath(job, new Path("hadoop-sample/materials/output"));
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
 }

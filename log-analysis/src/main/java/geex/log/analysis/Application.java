@@ -1,7 +1,7 @@
-package geex.datahouse;
+package geex.log.analysis;
 
-import geex.datahouse.config.FileConfig;
-import geex.datahouse.service.AnalysisFileService;
+import geex.log.analysis.config.FileConfig;
+import geex.log.analysis.service.AnalysisFileService;
 
 public class Application {
     public static void main(String args[]) {
@@ -9,7 +9,7 @@ public class Application {
 //        getFile.getFileThoughSSH();
 //        UnzipFileService unzipFile = new UnzipFileService();
 //        unzipFile.unzip(FileConfig.TEMP_FILE_NAME);
-        AnalysisFileService analysisFile = new AnalysisFileService();
-        analysisFile.deal(FileConfig.TEMP_UNZIP_FILE_NAME);
+//        AnalysisFileService analysisFile = new AnalysisFileService();
+//        analysisFile.deal(FileConfig.TEMP_UNZIP_FILE_NAME);
     }
 }
