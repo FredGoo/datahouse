@@ -20,7 +20,7 @@ public class Application {
 //        job.setReducerClass(LineReducer.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
-        FileInputFormat.addInputPath(job, new Path(FileConfig.OUTPUT + FileConfig.TEMP_TAR_FILE_DIR));
+        FileInputFormat.addInputPath(job, new Path(FileConfig.OUTPUT + "\\SQL_20161201-023001\\bizAppCommon2016120101"));
         FileOutputFormat.setOutputPath(job, new Path("log-analysis/output"));
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
