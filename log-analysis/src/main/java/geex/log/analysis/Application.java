@@ -1,8 +1,8 @@
 package geex.log.analysis;
 
 import geex.log.analysis.config.FileConfig;
-import geex.log.analysis.mapper.LineMapper;
-import geex.log.analysis.reducer.LineReducer;
+import geex.log.analysis.mapper.SqlMapper;
+import geex.log.analysis.reducer.SqlReducer;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.Text;
@@ -15,9 +15,9 @@ public class Application {
         Configuration conf = new Configuration();
         Job job = Job.getInstance(conf, "log analysis");
 
-        job.setMapperClass(LineMapper.class);
-//        job.setCombinerClass(LineReducer.class);
-//        job.setReducerClass(LineReducer.class);
+        job.setMapperClass(SqlMapper.class);
+//        job.setCombinerClass(SqlReducer.class);
+        job.setReducerClass(SqlReducer.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
         FileInputFormat.addInputPath(job, new Path(FileConfig.OUTPUT + "\\SQL_20161201-023001\\bizAppCommon2016120101"));

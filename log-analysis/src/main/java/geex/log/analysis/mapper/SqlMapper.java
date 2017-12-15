@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class LineMapper extends Mapper<Object, Text, Text, Text> {
+public class SqlMapper extends Mapper<Object, Text, Text, Text> {
     private static final Log logger = new Log();
 
     public void map(Object key, Text value, Context context) throws IOException, InterruptedException {
@@ -67,7 +67,7 @@ public class LineMapper extends Mapper<Object, Text, Text, Text> {
 
             // 获取字段
             String tableSchemaValue = fileName + "#" + date + "#" + key + "#" + value;
-            logger.info("表结构: " + tableSchemaValue);
+            logger.debug("表结构: " + tableSchemaValue);
             Text tableSchemaValueOutput = new Text(tableSchemaValue);
 
             try {
